@@ -1,8 +1,7 @@
 %
 %  SCRIPT TO OUTPUT SIMULATION RESULTS OF CONTROL ALGORITHM FOR AUTONOMOUS
 %  DRIVING WHEN INTRODUCING GAUSS-MARKOV CORRELATED ERRORS IN POSITION,
-%  VELOCITY AND ATTITUDE MEASUREMENTS. ESCAPE PROJECT. GMV AEROSPACE &
-%  DEFENCE. AUTHOR: RAFAEL BERNAR ETCHENIQUE. 2017.
+%  VELOCITY AND ATTITUDE MEASUREMENTS.AUTHOR: RAFAEL BERNAR ETCHENIQUE. 2017.
 %
 
 %% VARIABLE SETTINGS AND CONTROL PARAMETERS
@@ -15,7 +14,7 @@ tau_vel_att = 2;                               %Correlation time for velocity an
 s_e  = [0.2 0.7 3  ];                          %Expected across error values used to compute Variance [m].
 s_e1 = [0.3 1   3.5];                          %Expected along error values [m].
 s_vel_e = 0.5 / 3.6;                           %Expected absolute velocity error. [0.5 km/h]
-s_att_e = 0.5 * pi / 180;                      %Expected attitude error. [0.5บ]
+s_att_e = 0.5 * pi / 180;                      %Expected attitude error. [0.5ยบ]
 
 latency = [0 50 100 300 500 1000];             %Latency in [ms].                         
 
